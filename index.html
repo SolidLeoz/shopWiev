@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presto.It</title>
+    <link rel="shortcut icon" href="./media/image_2023-01-07_18-40-09.png" type="image/x-icon">
+    <!-- cdnSwiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- cdn fontawersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+     <!--font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Neucha&display=swap" rel="stylesheet"> 
+    <!-- cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- style interno  -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navBg " id="#navCucstom">
+      <div class="container-fluid">
+        <a class="navbar-brand faIconColor" href="./index.html"><i class="fa-solid fa-store"></i></a>
+        <button class="togglerCustom d-lg-none" id="togglerCustom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Cerca Annuncio" aria-label="Search" value="" id="inputPlaceholder">
+                <button class="btn btnCustom" id="cerca" type="submit">Cerca</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!--header-->
+      <header class="container-fluid">
+        <div class="row headerBg align-content-end align-content-md-center justify-content-center p-3">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="bgH1 flipInX">
+              <h1>Presto</h1>
+              <h2>Lorem ipsum dolor sit.</h2>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- sezione 1 -->
+      <section class="container-fluid section1Bg  py-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="./media/—Pngtree—shopping on mobile_5354478.png" class="img-fluid d-none" id="imgCustom" alt="">
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-content-center">
+            <h2 id="section1H2" class="text-center my-4">Un pò di Numeri</h2>
+            <p class="lead text-center"> <span id="firstSpan" class="increment-numbers d-block"> 0 </span> Clienti Soddisfatti</p>
+            <p class="lead text-center"> <span id="secondSpan" class="increment-numbers d-block"> 0 </span> Prodotti Venduti</p>
+            <p class="lead text-center"> <span id="thirdSpan" class="increment-numbers d-block"> 0 </span> Recensioni</p>
+          </div>
+        </div>
+      </section>
+      <!-- sezione 2  -->
+
+      <section class="container my-5 py-5">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            
+            <!-- Swiper main container -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper d-flex ">
+
+                
+                
+              </div>
+            </div>
+            
+        </div>
+      </section>
+
+      <!-- sezione annunci -->
+      <section class="container-fluid">
+        <div class="row">
+          <!-- filtri annunci -->
+          <div class="col-12 col-md-3">
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Filtro Categoria
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body" id="categoryWrapper" >
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="all" checked>
+                      <label class="form-check-label" for="all">
+                        Tutte le categorie
+                      </label>
+                    </div>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Filtro Prezzo
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Filtro Parola
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- colonna annunci -->
+          <div class="col-12 col-md-9 d-flex flex-wrap justify-content-evenly" id="cardsWrapper" >
+            
+            
+            
+            
+          </div>
+        </div>
+      </section>
+      <!-- button scroller up -->
+      <section>
+        <div class="scroller d-none" id="btnScroller">
+          <a href="#">
+            <button class="btn-scroller">
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+          </div>
+        </a>
+      </section>
+
+      
+      
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+          5534 Somewhere In. The World 22193-10212<br>
+              
+          <a class="footer__btn" href="https://t.me/M91lp">Contact Us</a>
+        </address>
+      </div>
+      
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+    
+            <li>
+              <a href="#">Print</a>
+            </li>
+                
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+          
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+            
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+            
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+            
+            <li>
+              <a href="#">Automation</a>
+            </li>
+            
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+            
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+          
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+        
+        <div class="legal__links pe-5">
+          <span>Your Code <span class="heart">♥</span> My Code </span>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- jsSwiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SwiperScriptInterno -->  
+      
+    <script>
+      let rewiews = [
+        {name: 'Leonardo', quote : ' è stato un acquisto pessimo'},
+        {name: 'Danilo', quote : 'pessimi, non vendono pesi da palestra superiori alla tonnellata, preferisco amazon, acquisto sconsigliatissimo'},
+        {name: 'Cristina', quote : ' dovrebbero esserci più libri'},
+        {name: 'Juri', quote : `il sistema economico mondiale è un'illusione`},
+        {name: 'Jessica', quote : 'mamma mia quanto è bono Massimo Pericolo'},
+        {name: 'Marco', quote : 'se fai il cash chiamame zio'},
+        {name: 'Ludovica', quote : 'pessima esperienza, il massaggiatore per glutei si è rotto subito'}
+      ]
+
+      let swiperWrapper = document.querySelector('.swiper-wrapper');
+
+      rewiews.forEach(element => {
+        let div = document.createElement('div');
+
+        div.classList.add('swiper-slide', 'card-custom', 'flex-column', 'p-5');
+        
+        div.innerHTML = `
+          <p class = 'h3' >${element.name}:</p>
+          <p class = 'text-center'>"${element.quote}"</p>
+        `
+
+        swiperWrapper.appendChild(div)
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        loop: true,
+      });
+    </script>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- js custom -->
+    <script src="./main.js"></script>
+  </body>
+</html>
